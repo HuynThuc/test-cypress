@@ -23,7 +23,7 @@ jobs:
           cache: 'yarn'  # Enable caching for faster installs
           
       - name: Install Dependencies
-        run: yarn install
+        run: yarn add next react react-dom
 
       - name: Build and Start Application
         run: yarn build-and-start &
