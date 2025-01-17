@@ -1,38 +1,72 @@
-name: Cypress Tests
-
+name: Deploy
 on:
   workflow_dispatch:
   push:
     branches: [develop]
 
+env:
+  DOCKER_IMAGE: nmd-admin-ui:${{ github.sha }}
+  CONTAINER_NAME: nmd-admin-ui
+  AWS_DEFAULT_REGION: ap-southeast-1
+
 jobs:
-  cypress:
+  test:
     name: Run Cypress Tests
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 16
-
+          node-version: '16'
+          
       - name: Install Dependencies
         run: yarn install
 
-      - name: Build Application
-        run: yarn build-and-start
-
-      - name: Start Application for E2E Tests
+      - name: Build and Start Application
+        run: yarn build-and-start &
+        
+      - name: Wait for App to Start
         run: |
-          docker-compose -f docker-compose.test.yml up -d
-          echo "Application started for E2E tests."
+          echo "Waiting for app to start..."
+          sleep 30  # Adjust this value based on your app's startup time
 
       - name: Run Cypress Tests
-        run: yarn cypress:run
-        env:
-          CI: true
+        run: yarn cypress:run  # Note: Using cypress:run instead of cypress:open for CI
 
-      - name: Stop and Clean Up After Tests
-        if: always()
-        run: docker-compose -f docker-compose.test.yml down
+  pack:
+    name: Build and deploy Docker Image
+    needs: test  # This ensures tests pass before deploying
+    runs-on: [self-hosted]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build Docker Image
+        run: sudo docker build --no-cache -t ${{ env.DOCKER_IMAGE }} .
+
+      - name: Check if Container Exists
+        run: |
+          CONTAINER_ID=$(sudo docker ps -a -q -f name=^${{ env.CONTAINER_NAME }})
+          if [ "$CONTAINER_ID" ]; then
+            echo "Container ${{ env.CONTAINER_NAME }} exists with ID $CONTAINER_ID, removing it..."
+            sudo docker rm -f $CONTAINER_ID
+            echo "Container ${{ env.CONTAINER_NAME }} removed."
+          else
+            echo "Container ${{ env.CONTAINER_NAME }} does not exist."
+          fi
+
+      - name: Deploy to AWS
+        run: |
+          echo "Creating and starting container ${{ env.CONTAINER_NAME }}..."
+          sudo docker create --restart unless-stopped -p 3007:3000 --name ${{ env.CONTAINER_NAME }} ${{ env.DOCKER_IMAGE }}
+          sudo docker start ${{ env.CONTAINER_NAME }}
+          echo "Container ${{ env.CONTAINER_NAME }} started with image ${{ env.DOCKER_IMAGE }}."
+
+      - name: Clean up
+        run: |
+          echo "Cleaning up dangling images and containers..."
+          yes | sudo docker image prune -f
+          yes | sudo docker container prune -f
+          sudo docker images -q --filter "dangling=true" | xargs -r sudo docker rmi -f
+          yes | sudo docker system prune --all -f
