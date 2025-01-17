@@ -12,7 +12,7 @@ env:
 jobs:
   test:
     name: Run Cypress Tests
-    runs-on: [self-hosted]
+    runs-on: ubuntu-latest  # Thay vì [self-hosted]
     steps:
       - uses: actions/checkout@v2
 
@@ -38,7 +38,7 @@ jobs:
   pack:
     name: Build and deploy Docker Image
     needs: test  # This ensures tests pass before deploying
-    runs-on: [self-hosted]
+    runs-on: ubuntu-latest  # Thay vì [self-hosted]
     steps:
       - uses: actions/checkout@v2
 
