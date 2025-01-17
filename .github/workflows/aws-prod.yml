@@ -12,18 +12,17 @@ env:
 jobs:
   test:
     name: Run Cypress Tests
-    runs-on: ubuntu-latest  # Changed from self-hosted to ubuntu-latest
+    runs-on: ubuntu-latest  # Thay vì [self-hosted]
     steps:
       - uses: actions/checkout@v2
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18.12.0'  # Specified minimum compatible version
-          cache: 'yarn'  # Enable caching for faster installs
+          node-version: '16'
           
       - name: Install Dependencies
-        run: yarn add next react react-dom
+        run: yarn install
 
       - name: Build and Start Application
         run: yarn build-and-start &
@@ -31,15 +30,15 @@ jobs:
       - name: Wait for App to Start
         run: |
           echo "Waiting for app to start..."
-          sleep 30
+          sleep 30  # Adjust this value based on your app's startup time
 
       - name: Run Cypress Tests
-        run: yarn cypress:run
+        run: yarn cypress:run  # Note: Using cypress:run instead of cypress:open for CI
 
   pack:
-    name: Build and deploy Docker Image 
-    needs: test
-    runs-on: ubuntu-latest
+    name: Build and deploy Docker Image
+    needs: test  # This ensures tests pass before deploying
+    runs-on: ubuntu-latest  # Thay vì [self-hosted]
     steps:
       - uses: actions/checkout@v2
 
