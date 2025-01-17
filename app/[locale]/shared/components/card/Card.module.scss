@@ -1,0 +1,11 @@
+.root {
+  @apply relative flex flex-col min-w-0 w-full break-words mb-6 shadow-lg rounded-lg bg-slate-100 border-0;
+}
+
+.header {
+  @apply rounded-t bg-white mb-0 px-6 py-6;
+}
+
+.body {
+  @apply flex-auto px-6 py-5;
+}

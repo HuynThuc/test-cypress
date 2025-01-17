@@ -1,0 +1,17 @@
+.loading-indicator {
+  @apply m-auto w-40 h-40 bg-white rounded-lg items-center justify-center text-center;
+}
+
+.loading-overlay {
+  @apply w-full h-full fixed top-0 left-0 bg-opacity-50 items-center justify-center flex;
+  z-index: 9999999;
+  background-color: rgb(130 130 130 / var(--tw-bg-opacity));
+}
+
+.spinnerContainer {
+  @apply flex flex-col gap-6 justify-center items-center h-full w-full;
+
+  svg {
+    @apply w-20 h-20;
+  }
+}

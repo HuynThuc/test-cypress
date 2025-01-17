@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"],
+      "@public/*": ["public/*"],
+      "@/app/*": ["app/*"],
+      "@/banners/*": ["./public/banners/*"],
+      "@/icons/*": ["./public/icons/*"],
+      "@/images/*": ["./public/images/*"],
+      "@/lottie/*": ["./public/lottie/*"],
+      "@/animations/*": ["./public/animations/*"],
+      "@/shared/*": ["app/[locale]/shared/*"],
+      "@/modules/*": ["app/[locale]/modules/*"],
+      "@/pages/*": ["app/[locale]/pages/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/[locale]/modules/call/components/call/Avatar.jsx"
+  ],
+  "exclude": ["node_modules"]
+}

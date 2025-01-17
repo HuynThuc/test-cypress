@@ -1,0 +1,229 @@
+{
+  "Login": {
+    "Success": "Login successful!",
+    "ErrorLogin": "Login failed, please try again!",
+    "ErrorCookie": "Failed to set cookie",
+    "ErrorGoogle": "Google login failed. Please try again!",
+    "LoginWithGoogle": "Log in with Google"
+  },
+  "Home": {
+    "hello": "Welcome to HelenSpeaking!",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "appearance": "Appearance",
+    "useDeviceTheme": "Device theme",
+    "darkTheme": "Dark theme",
+    "lightTheme": "Light theme",
+    "continueWatching": "Continue watching",
+    "advertisement": "Advertisement",
+    "viewAll": "View all",
+    "trendingVideos": "Trending videos",
+    "topActiveUsers": "Top active users",
+    "activeLiveRooms": "Active live rooms",
+    "discoverGenres": "Discover genres you love",
+    "exploreAudioTopics": "Explore audio topics",
+    "popularAudio": "Popular audio",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "accent": "English",
+    "ieltsListening": "IELTS Listening",
+    "views": "views",
+    "youMayAlsoLike": "You may also like",
+    "note": "Note",
+    "save": "Save",
+    "cancel": "Cancel",
+    "placeholder": "Enter your note for this sentence..."
+  },
+  "SideNav": {
+    "menu": "Menu",
+    "yourLearning": "Your Learning",
+    "general": "General",
+    "home": "Home",
+    "game": "Game",
+    "courses": "Courses",
+    "videos": "Videos",
+    "audio": "Audio",
+    "dictionary": "Dictionary",
+    "favorites": "Favorites",
+    "vocabularies": "Vocabularies",
+    "downloadApp": "Download App",
+    "logOut": "Log Out",
+    "language": "Language"
+  },
+  "Footer": {
+    "introduction": "Our vision is to provide convenience and help improve your English learning.",
+    "about": "About",
+    "community": "Community",
+    "socials": "Socials",
+    "howToUse": "How to use",
+    "featured": "Featured",
+    "partnership": "Partnership",
+    "businessRelation": "Business Relation",
+    "events": "Events",
+    "blog": "Blog",
+    "inviteAFriend": "Invite a friend",
+    "discord": "Discord",
+    "instagram": "Instagram",
+    "twitter": "Twitter",
+    "facebook": "Facebook",
+    "copyRight": "All rights reserved",
+    "privacyPolicy": "Privacy & Policy",
+    "termsCondition": "Terms & Condition",
+    "facebookfanpage": "Facebook Fanpage",
+    "facebookgroup": "Facebook Group",
+    "tiktok": "Tik Tok",
+    "faq": "FAQ",
+    "topchannels": "Top Channels ",
+    "E2Ielts": "E2 Ielts",
+    "tedtalk": "Ted Talks",
+    "EnglishLesson4U": "EnglishLesson4U",
+    "BBC6minutesenglish": "BBC English",
+    "TheToeicOfficialChannel": "The Toeic Official Channel",
+    "topcategories": "Top Categories",
+    "businessandfinance": "Business And Finance",
+    "learning": "Learning Resources",
+    "artsandentertainment": "Arts and Entertainment",
+    "music": "Music",
+    "animation": "Animation",
+    "support": "Support Us",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "faqs": "FAQS"
+  },
+  "Pricing": {
+    "upgradeYourPlan": "Upgrade your plan",
+    "save": "Save",
+    "validuntil": "Valid until",
+    "freeaccess": "Free access",
+    "currentplan": "Current Plan",
+    "getfreeaccess": "Get free access",
+    "getstarted": "Get started",
+    "shareToGetPro": "Share to Get 1 Day Pro Access",
+    "shareToGetProDescription": "Share Rabito English on Facebook to get 1 day of pro access for free!",
+    "shareOnFacebook": "Share on Facebook"
+  },
+  "Streak": {
+    "days": "Days",
+    "videos": "Video",
+    "lessons": "Lessons",
+    "weekStreak": "week streak",
+    "week": "Week",
+    "welcome": "You are doing really great, Toby!"
+  },
+  "GamePage": {
+    "playGame": "Play Game",
+    "inDevelopment": "In Development"
+  },
+  "Videos": {
+    "defaultTab": "For You",
+    "accent": "English",
+    "practice": "Practice Now",
+    "latest": "Latest",
+    "mostViewed": "Most Viewed",
+    "topFavorites": "Top Favorites",
+    "usersPracticed": "users practiced"
+  },
+  "Search": {
+    "videos": "Videos",
+    "vocabulary": "Vocabulary",
+    "channels": "Channels",
+    "results": "results",
+    "recentsearches": "Recent searches",
+    "search": "Search something..."
+  },
+  "Error": {
+    "PageNotFound": {
+      "title": "Page Not Found",
+      "message": "Sorry, we can’t find the page you’re looking for.",
+      "btnText": "Back to Home"
+    },
+    "SomethingWentWrong": {
+      "title": "Something Went Wrong",
+      "message": "We keep track of these errors, but feel free to contact us if refreshing doesn’t fix things.",
+      "btnText": "Retry"
+    },
+    "NoInternetConnection": {
+      "title": "No Internet Connection",
+      "message": "Please check your internet connection and try again.",
+      "btnText": "Retry"
+    }
+  },
+  "Learn": {
+    "nosubtitles": "No subtitles available.",
+    "watchandtest": "Watch and test your understanding:",
+    "subtitlesOff": "Subtitles off.",
+    "learningTools": "Learning Tools",
+    "listenAndChooseTheCorrectAnswer": "Listen and choose the correct answer.",
+    "voice": "Voice",
+    "know": "Know",
+    "reviewneeded": "Review needed",
+    "total": "Total",
+    "congratulations": "Congratulations!",
+    "youArelearned": "You’ve learned",
+    "newVocabularyWordsInThisVideo": "new vocabulary words in this video!🎉",
+    "keepPracticing": "Great job on expanding your English skills! Keep practicing to reinforce what you&apos;ve learned.",
+    "quizTime": "Quiz Time!",
+    "back": "Back",
+    "goToQuiz": "Go to Quiz",
+    "goToPractice": "Go to Practice",
+    "learn": "Learn",
+    "selectedWords": "Selected Words",
+    "playbackSpeed": "Playback Speed",
+    "volume": "Volume"
+  },
+  "ToastMessage": {
+    "errorRefreshToken": "The session has expired, please log in again."
+  },
+  "Consultant": {
+    "welcome": {
+      "title": "Welcome, We are",
+      "companyName": "Rabito",
+      "mission": "Our mission is to empower businesses with tailored high-quality outsourcing solutions that drive growth and efficiency.",
+      "getStarted": "Get Started",
+      "learnMore": "Learn More"
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Empowering your digital journey with comprehensive solutions and expert teams",
+      "fullStartupTeam": {
+        "title": "Full Startup Team Deployment",
+        "description": "We provide a dedicated team to rapidly execute your startup idea, from inception to end-user delivery. Our projects range from CRM systems to AI-integrated solutions.",
+        "features": [
+          "End-to-End Project Management",
+          "Custom Team Assembly",
+          "AI and CRM Expertise"
+        ]
+      },
+      "specializedTalent": {
+        "title": "Specialized Talent Augmentation",
+        "description": "If you already have a team and need to hire engineers, UI/UX designers, etc., we provide the specialized talent you need to enhance your project.",
+        "features": [
+          "Flexible Talent Solutions",
+          "Expert Engineers and Designers",
+          "Seamless Integration with Your Team"
+        ]
+      },
+      "technologies": "Technologies We Work With",
+      "learnMore": "Learn More"
+    },
+    "global": {
+      "title": "Our Global Presence and Client Success Stories",
+      "subtitle": "Go along with RabitoEng",
+      "description": "Beyond the worldwide with our fascinating services",
+      "content": "We offer our services in various locations around the world, in addition to Japan. We have more locations in the US and South Africa where your startup can thrive and grow with our support.",
+      "viewAll": "View All Locations",
+      "clientSuccessStories": "Client Success Stories"
+    },
+    "insights": {
+      "title": "Insights for Startups",
+      "description": "Discover key insights and solutions that help startups overcome common challenges and accelerate their growth."
+    },
+    "navbar": {
+      "home": "Home",
+      "services": "Services",
+      "global": "Global Presence",
+      "insights": "Insights",
+      "contact": "Contact Us"
+    }
+  }
+}

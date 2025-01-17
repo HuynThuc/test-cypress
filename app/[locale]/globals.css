@@ -1,0 +1,347 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0.3px;
+  scrollbar-gutter: stable;
+}
+@layer base {
+  :root {
+    --background: 0 0% 96%;
+    --opposite-background: 237 21% 20%;
+    --surface: 0 0% 100%;
+    --background-secondary: 237 11% 61%;
+
+    --text-light: 240 18% 13%;
+    --text-dark: 236 14% 39%;
+    --text-secondary: 236 14% 39%;
+
+    --border: 237 11% 61%;
+
+    --primary: 154 94% 39%;
+    --on-primary: 0 0% 100%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --primary-color: 154 94% 39%;
+    --primary-green: 154 94% 39%;
+    --primary-coral: 0 91% 71%;
+    --primary-orange: 25 95% 53%;
+    --primary-amber: 38 92% 50%;
+    --primary-yellow: 48 96% 53%;
+    --primary-lime: 84 81% 44%;
+    --primary-teal: 158 64% 52%;
+    --primary-turquoise: 172 66% 50%;
+    --primary-cyan: 188 86% 53%;
+    --primary-skyblue: 213 94% 68%;
+    --primary-lavender: 255 92% 76%;
+    --primary-pink: 292 91% 73%;
+    --primary-rose: 329 86% 70%;
+    --primary-coralpink: 351 95% 71%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --radius: 0.5rem;
+    --icon: 236 14% 39%;
+
+    --shadow-elevation-01-inset: inset 0px 0.5px 4px rgba(96, 97, 112, 0.32);
+    --shadow-elevation-00: 0px 0px 0px rgba(0, 0, 0, 0);
+    --shadow-elevation-01: 0px 0.5px 2px rgba(96, 97, 112, 0.16),
+      0px 0px 1px rgba(40, 41, 61, 0.08);
+    --shadow-elevation-02: 0px 2px 4px rgba(96, 97, 112, 0.16),
+      0px 0px 1px rgba(40, 41, 61, 0.04);
+    --shadow-elevation-03: 0px 4px 8px rgba(96, 97, 112, 0.16),
+      0px 0px 2px rgba(40, 41, 61, 0.04);
+    --shadow-elevation-04: 0px 8px 16px rgba(96, 97, 112, 0.16),
+      0px 2px 4px rgba(40, 41, 61, 0.04);
+    --shadow-elevation-05: 0px 16px 24px rgba(96, 97, 112, 0.16),
+      0px 2px 8px rgba(40, 41, 61, 0.04);
+    --shadow-elevation-06: 0px 20px 32px rgba(96, 97, 112, 0.24),
+      0px 2px 8px rgba(40, 41, 61, 0.08);
+
+    --gradient-green-light: linear-gradient(180deg, #96e6a1 0%, #d4fc79 100%);
+    --gradient-red-light: linear-gradient(180deg, #fd746c 0%, #ff9068 100%);
+    --gradient-blue-light: linear-gradient(180deg, #0099f7 0%, #12f1e4 100%);
+  }
+
+  .dark {
+    --background: 240 18% 13%;
+    --opposite-background: 0 0% 96%;
+    --surface: 237 21% 21%;
+    --background-secondary: 237 11% 21%;
+
+    --text-light: 240 25% 98%;
+    --text-dark: 236 14% 39%;
+    --text-secondary: 233 19% 82%;
+
+    --border: 0 0% 74%;
+
+    --primary: 153 95% 30%;
+    --on-primary: 0 0% 100%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --primary-color: 153 95% 30%;
+    --primary-green: 153 95% 30%;
+    --primary-coral: 0 84% 60%;
+    --primary-orange: 21 90% 48%;
+    --primary-amber: 32 95% 44%;
+    --primary-yellow: 45 93% 47%;
+    --primary-lime: 85 85% 35%;
+    --primary-teal: 160 84% 39%;
+    --primary-turquoise: 173 80% 40%;
+    --primary-cyan: 189 94% 43%;
+    --primary-skyblue: 217 91% 60%;
+    --primary-lavender: 258 90% 66%;
+    --primary-pink: 292 84% 61%;
+    --primary-rose: 330 81% 60%;
+    --primary-coralpink: 350 89% 60%;
+
+    --ring: 217.2 32.6% 17.5%;
+    --shadow-inset: inset 0px 0.5px 4px 0px rgba(0, 0, 0, 0.32);
+    --shadow-popup: 0px 8px 16px 0px hsla(0, 0%, 0%, 0.32);
+    --icon: 240 13% 95%;
+
+    --shadow-elevation-01-inset: inset 0px 0.5px 4px rgba(0, 0, 0, 0.32);
+    --shadow-elevation-00: 0px 0px 0px rgba(0, 0, 0, 0);
+    --shadow-elevation-01: 0px 1px 2px rgba(0, 0, 0, 0.32),
+      0px 0px 1px rgba(40, 41, 61, 0.08);
+    --shadow-elevation-02: 0px 2px 4px rgba(0, 0, 0, 0.32),
+      0px 0px 1px rgba(0, 0, 0, 0.04);
+    --shadow-elevation-03: 0px 4px 8px rgba(0, 0, 0, 0.32),
+      0px 0px 2px rgba(0, 0, 0, 0.04);
+    --shadow-elevation-04: 0px 8px 16px rgba(0, 0, 0, 0.32),
+      0px 2px 4px rgba(0, 0, 0, 0.04);
+    --shadow-elevation-05: 0px 16px 24px rgba(0, 0, 0, 0.32),
+      0px 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-elevation-06: 0px 20px 32px rgba(0, 0, 0, 0.32),
+      0px 2px 8px rgba(0, 0, 0, 0.08);
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-text-light;
+  }
+}
+@layer components {
+  .primaryRedBtn {
+    @apply rounded-[5px] border-[1px] bg-[#FD3D57] py-2 px-4 font-bold text-white duration-300 ease-in-out hover:border-solid hover:border-[#FD3D57] hover:bg-white hover:text-[#FD3D57];
+  }
+}
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+  }
+
+  .animate-scale-up {
+    animation: scale-up 0.3s ease-in-out forwards;
+  }
+
+  .clip-path-polygon {
+    clip-path: polygon(0% 0%, 98% 0, 98% 30%, 90% 100%, 0% 100%);
+  }
+}
+
+/* text style */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.375rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.75rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.375rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.375rem;
+}
+
+.text-body-16pt {
+  @apply font-normal text-base;
+}
+
+.text-body-14pt {
+  @apply font-normal text-sm leading-6;
+}
+
+.text-label-small {
+  @apply font-medium text-[10px] leading-[14px] tracking-[0.2px];
+}
+
+.text-label-medium {
+  @apply font-medium text-xs tracking-[0.2px];
+}
+
+.text-label-large {
+  @apply font-medium text-sm leading-6;
+}
+
+.text-stylized-lead {
+  @apply font-bold text-sm leading-6;
+}
+
+.text-stylized-small {
+  @apply font-normal text-[12px] leading-[15px];
+}
+
+/* scrollbar style */
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  width: 10px;
+  background-color: 0 0% 96%;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+  background-color: 0 0% 96%;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: 240 18% 13%;
+}
+/*hiden scrollbar*/
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+/* .auto-height{
+  height:auto;
+} */
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+/* .scrollbar-transparent::-webkit-scrollbar {
+  background: transparent;
+} */
+.scrollbar-transparent {
+  overflow-y: auto;
+}
+
+.scrollbar-transparent::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollbar-transparent::-webkit-scrollbar-track {
+  background: transparent; /* Track background */
+  border-radius: 2px;
+}
+
+.scrollbar-transparent::-webkit-scrollbar-thumb {
+  height: 20px;
+  background-color: hsl(var(--primary-color)); /* Thumb background */
+  border-radius: 6px;
+  border: 3px solid transparent; /* To create space around the thumb */
+  background-clip: padding-box;
+}
+.no-scroll {
+  overflow: hidden;
+  margin-right: 17px;
+}
+.transition-height {
+  transition:
+    height 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.gradient-green-background {
+  background: var(--gradient-green-light);
+}
+.gradient-green-text {
+  background: var(--gradient-green-light);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-red-background {
+  background: var(--gradient-red-light);
+}
+.gradient-red-text {
+  background: var(--gradient-red-light);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-blue-background {
+  background: var(--gradient-blue-light);
+}
+.gradient-blue-text {
+  background: var(--gradient-blue-light);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

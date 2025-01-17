@@ -1,0 +1,94 @@
+@startuml cypress_structure
+
+package "cypress/e2e" {
+  class LoginTest {
+    +beforeEach()
+    +it()
+  }
+
+  class HomeTest {
+    +beforeEach()
+    +it()
+  }
+
+  class VideoLearnerTest {
+    +beforeEach()
+    +it()
+  }
+}
+
+package "cypress/fixtures" {
+  class AuthFixture {
+    +deviceID: string
+    +headerText: string
+  }
+
+  class VideoLearnerFixture {
+    +videoId: string
+  }
+}
+
+package "cypress/types" {
+  interface IBasePage {
+    +visit(): void
+    +getUrl(): string
+    +waitForPageLoad(timeout?: number): void
+  }
+
+  interface ILoginPage {
+    +performGoogleLogin(): Chainable<GoogleLoginResponse>
+    +signIn(user: UserInfo, authorization: AuthorizationInfo): Chainable
+  }
+
+  interface IHomePage {
+    +verifyHomePageHeader(): void
+    +verifyUrl(): void
+    +verifyTrendingVideosExist(): void
+    +verifyTopChannelsExist(): void
+  }
+
+  interface IVideoLearnerPage {
+    +verifyVideoSection(): void
+    +verifyVocabularySection(): void
+    +verifyQuizSection(): void
+    +verifySubtitleSection(): void
+    +navigateToVideo(videoId?: string): void
+  }
+
+  class UserInfo {
+    +id: string
+    +fullname: string
+    +email: string
+    +photoUrl: string
+    +locale: string
+    +isFirstLogin: boolean
+    +audienceType: string
+  }
+
+  class AuthorizationInfo {
+    +accessToken: string
+    +accessTokenExpiresAt: string
+    +refreshToken: string
+    +refreshTokenExpiresAt: string
+  }
+
+  class GoogleLoginResponse {
+    +user: UserInfo
+    +authorization: AuthorizationInfo
+  }
+}
+
+package "cypress/support/commands" {
+  class AuthCommands {
+    +mockGoogleLogin(): Chainable<string>
+    +loginByGoogleApi(): Chainable<GoogleLoginResponse>
+  }
+}
+
+package "cypress/support/utils" {
+  class SupportFunc {
+    +randomUUID(): string
+  }
+}
+
+@enduml

@@ -1,0 +1,229 @@
+{
+  "Login": {
+    "Success": "ログイン成功！",
+    "ErrorLogin": "ログインに失敗しました。もう一度お試しください！",
+    "ErrorCookie": "クッキーの設定に失敗しました",
+    "ErrorGoogle": "Googleログインに失敗しました。もう一度お試しください！",
+    "LoginWithGoogle": "Googleでログイン"
+  },
+  "Home": {
+    "hello": "HelenSpeakingへようこそ！",
+    "signIn": "サインイン",
+    "signUp": "サインアップ",
+    "appearance": "外観",
+    "useDeviceTheme": "デバイス",
+    "darkTheme": "ダークモード",
+    "lightTheme": "ライトモード",
+    "continueWatching": "視聴を続ける",
+    "advertisement": "広告",
+    "viewAll": "すべて表示",
+    "trendingVideos": "トレンドビデオ",
+    "topActiveUsers": "トップアクティブユーザー",
+    "activeLiveRooms": "アクティブライブルーム",
+    "discoverGenres": "あなたが好きなジャンルを発見する",
+    "exploreAudioTopics": "オーディオトピックを探索する",
+    "popularAudio": "人気のオーディオ",
+    "showMore": "もっと見る",
+    "showLess": "少なく表示",
+    "accent": "英語",
+    "ieltsListening": "IELTSリスニング",
+    "views": "ビュー数",
+    "youMayAlsoLike": "あなたも好きかもしれません",
+    "note": "メモ",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "placeholder": "この文のメモを入力してください..."
+  },
+  "SideNav": {
+    "menu": "ナビゲーション",
+    "yourLearning": "あなたの学習",
+    "general": "一般",
+    "home": "ホームページ",
+    "game": "ゲーム",
+    "courses": "コース",
+    "videos": "ビデオ",
+    "audio": "オーディオ",
+    "dictionary": "辞書",
+    "favorites": "お気に入り",
+    "vocabularies": "お気に入り",
+    "downloadApp": "アプリをダウンロード",
+    "logOut": "ログアウト",
+    "language": "言語"
+  },
+  "Footer": {
+    "introduction": "私たちのビジョンは、便利さを提供し、英語学習を向上させることです。",
+    "about": "について",
+    "community": "コミュニティ",
+    "socials": "ソーシャル",
+    "howToUse": "使い方",
+    "featured": "特集",
+    "partnership": "パートナーシップ",
+    "businessRelation": "ビジネス関係",
+    "events": "イベント",
+    "blog": "ブログ",
+    "inviteAFriend": "友達を招待する",
+    "discord": "Discord",
+    "instagram": "Instagram",
+    "twitter": "Twitter",
+    "facebook": "Facebook",
+    "copyRight": "無断転載を禁じます",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsCondition": "利用規約",
+    "facebookfanpage": "Facebook Fanpage",
+    "facebookgroup": "Facebook Group",
+    "tiktok": "Tik Tok",
+    "faq": "FAQ",
+    "topchannels": "トップチャンネル ",
+    "E2Ielts": "E2 Ielts",
+    "tedtalk": "Ted Talks",
+    "EnglishLesson4U": "EnglishLesson4U",
+    "BBC6minutesenglish": "BBC 6 minutes english",
+    "TheToeicOfficialChannel": "The Toeic Official Channel",
+    "topcategories": "トップカテゴリー",
+    "businessandfinance": "Business And Finance",
+    "learning": "Learning Resources",
+    "artsandentertainment": "Arts and Entertainment",
+    "music": "Music",
+    "animation": "Animation",
+    "support": "Support Us",
+    "privacy": "プライバシー",
+    "terms": "条項",
+    "faqs": "よくある質問"
+  },
+  "Pricing": {
+    "upgradeYourPlan": "プランをアップグレードする",
+    "save": "保存",
+    "validuntil": "有効期限",
+    "freeaccess": "無料アクセス",
+    "currentplan": "現在のプラン",
+    "getfreeaccess": "無料アクセスを取得",
+    "getstarted": "はじめる",
+    "shareToGetPro": "シェアして1日間のプロアクセスを獲得する",
+    "shareToGetProDescription": "Rabito EnglishをFacebookでシェアして、1日間のプロアクセスを無料で獲得しよう！",
+    "shareOnFacebook": "Facebookでシェア"
+  },
+  "Streak": {
+    "days": "日",
+    "videos": "ビデオ",
+    "lessons": "レッスン",
+    "weekStreak": "週間連続",
+    "week": "週",
+    "welcome": "あなたは本当に素晴らしいことをしています、トビー！"
+  },
+  "GamePage": {
+    "playGame": "ゲームをプレイ",
+    "inDevelopment": "開発中"
+  },
+  "Videos": {
+    "defaultTab": "あなたに",
+    "accent": "英語",
+    "practice": "今すぐ練習",
+    "latest": "最新",
+    "mostViewed": "最も見られた",
+    "topFavorites": "トップお気に入り",
+    "usersPracticed": "ユーザーが練習しました"
+  },
+  "Search": {
+    "videos": "ビデオ",
+    "vocabulary": "語彙",
+    "channels": "チャンネル",
+    "results": "結果",
+    "recentsearches": "最近の検索",
+    "search": "何かを検索する"
+  },
+  "Error": {
+    "PageNotFound": {
+      "title": "ページが見つかりません",
+      "message": "申し訳ありませんが、お探しのページが見つかりません。",
+      "btnText": "ホームに戻る"
+    },
+    "SomethingWentWrong": {
+      "title": "問題が発生しました",
+      "message": "私たちはこれらのエラーを追跡していますが、更新しても問題が解決しない場合はお気軽にお問い合わせください。",
+      "btnText": "リトライ"
+    },
+    "NoInternetConnection": {
+      "title": "インターネット接続なし",
+      "message": "インターネット接続を確認してもう一度お試しください。",
+      "btnText": "リトライ"
+    }
+  },
+  "Learn": {
+    "nosubtitles": "字幕は利用できません。",
+    "watchandtest": "ビデオを見てテストする:",
+    "subtitlesOff": "字幕オフ。",
+    "learningTools": "学習ツール",
+    "listenAndChooseTheCorrectAnswer": "聞いて正しい答えを選ぶ。",
+    "voice": "声",
+    "know": "分かる",
+    "reviewneeded": "確認",
+    "total": "合計",
+    "congratulations": "おめでとう！",
+    "youArelearned": "あなたは学びました",
+    "newVocabularyWordsInThisVideo": "このビデオで新しい単語を🎉",
+    "keepPracticing": "英語力を伸ばしておめでとうございます！学んだことを強化するために練習を続けてください。",
+    "quizTime": "クイズタイム！",
+    "back": "戻る",
+    "goToQuiz": "クイズに進む",
+    "goToPractice": "練習に進む",
+    "learn": "学ぶ",
+    "selectedWords": "選択された単語",
+    "playbackSpeed": "再生速度",
+    "volume": "音量"
+  },
+  "ToastMessage": {
+    "errorRefreshToken": "セッションの有効期限が切れました。再度ログインしてください。"
+  },
+  "Consultant": {
+    "welcome": {
+      "title": "ようこそ、私たちは",
+      "companyName": "Rabito",
+      "mission": "私たちの使命は、成長と効率を促進するカスタマイズされた高品質のアウトソーシングソリューションを企業に提供することです。",
+      "getStarted": "始めましょう",
+      "learnMore": "詳細を見る"
+    },
+    "services": {
+      "title": "私たちのサービス",
+      "description": "包括的なソリューションと専門家チームによるデジタルジャーニーの強化",
+      "fullStartupTeam": {
+        "title": "フルスタートアップチーム展開",
+        "description": "スタートアップのアイデアを迅速に実行するための専任チームを提供します。CRMシステムからAI統合ソリューションまで、幅広いプロジェクトに対応します。",
+        "features": [
+          "エンドツーエンドのプロジェクト管理",
+          "カスタムチーム編成",
+          "AIとCRMの専門知識"
+        ]
+      },
+      "specializedTalent": {
+        "title": "専門人材の増強",
+        "description": "既存のチームがあり、エンジニアやUI/UXデザイナーなどを雇用する必要がある場合、プロジェクトを強化するために必要な専門人材を提供します。",
+        "features": [
+          "柔軟な人材ソリューション",
+          "専門エンジニアとデザイナー",
+          "既存チームとのシームレスな統合"
+        ]
+      },
+      "technologies": "私たちが扱う技術",
+      "learnMore": "詳細を見る"
+    },
+    "global": {
+      "title": "グローバルプレゼンスとクライアントの成功事例",
+      "subtitle": "RabitoEngと共に",
+      "description": "魅力的なサービスで世界中へ",
+      "content": "日本以外にも、世界中の様々な場所でサービスを提供しています。米国や南アフリカにも拠点があり、スタートアップが私たちのサポートで成長し、繁栄できる環境があります。",
+      "viewAll": "すべての拠点を見る",
+      "clientSuccessStories": "クライアントの成功事例"
+    },
+    "insights": {
+      "title": "スタートアップのための洞察",
+      "description": "スタートアップが一般的な課題を克服し、成長を加速するのに役立つ重要な洞察とソリューションを発見してください。"
+    },
+    "navbar": {
+      "home": "ホーム",
+      "services": "サービス",
+      "global": "グローバル展開",
+      "insights": "洞察",
+      "contact": "お問い合わせ"
+    }
+  }
+}

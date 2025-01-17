@@ -1,0 +1,272 @@
+{
+  "Login": {
+    "Success": "Đăng nhập thành công!",
+    "ErrorLogin": "Đăng nhập thất bại, vui lòng thử lại!",
+    "ErrorCookie": "Không thể thiết lập cookie",
+    "ErrorGoogle": "Đăng nhập Google thất bại. Vui lòng thử lại!",
+    "LoginWithGoogle": "Đăng nhập với Google"
+  },
+  "Home": {
+    "hello": "Chào mừng đến với HelenSpeaking!",
+    "signIn": "Đăng nhập",
+    "signUp": "Đăng ký",
+    "appearance": "Giao diện",
+    "useDeviceTheme": "Giao diện thiết bị",
+    "darkTheme": "Giao diện tối",
+    "lightTheme": "Giao diện sáng",
+    "continueWatching": "Tiếp tục xem",
+    "advertisement": "Quảng cáo",
+    "viewAll": "Xem tất cả",
+    "trendingVideos": "Video nổi bật",
+    "topActiveUsers": "Người dùng nổi bật",
+    "activeLiveRooms": "Phòng học trực tuyến",
+    "discoverGenres": "Khám phá thể loại bạn yêu thích",
+    "exploreAudioTopics": "Khám phá chủ đề âm thanh",
+    "popularAudio": "Audio phổ biến",
+    "showMore": "Xem thêm",
+    "showLess": "Ẩn bớt",
+    "accent": "Tiếng Anh",
+    "ieltsListening": "IELTS Listening",
+    "views": "lượt xem",
+    "youMayAlsoLike": "Bạn cũng có thể thích",
+    "note": "Ghi chú",
+    "save": "Lưu",
+    "cancel": "Hủy bỏ",
+    "placeholder": "Viết ghi chú của bạn vào đây..."
+  },
+  "SideNav": {
+    "menu": "Điều hướng",
+    "yourLearning": "Cá nhân",
+    "general": "Tổng quan",
+    "home": "Trang chủ",
+    "game": "Trò chơi",
+    "courses": "Khóa học",
+    "videos": "Videos",
+    "audio": "Audio",
+    "dictionary": "Từ điển",
+    "favorites": "Yêu thích",
+    "vocabularies": "Ngữ pháp",
+    "downloadApp": "Tải ứng dụng",
+    "logOut": "Đăng xuất",
+    "language": "Ngôn ngữ"
+  },
+  "Footer": {
+    "introduction": "Tầm nhìn của chúng tôi là mang đến sự tiện lợi và giúp cải thiện quá trình học tiếng Anh của bạn.",
+    "about": "Về chúng tôi",
+    "community": "Cộng đồng",
+    "socials": "Mạng xã hội",
+    "howToUse": "Cách sử dụng",
+    "featured": "Sản phẩm nổi bật",
+    "partnership": "Quan hệ đối tác",
+    "businessRelation": "Quan hệ kinh doanh",
+    "events": "Sự kiện",
+    "blog": "Blog",
+    "inviteAFriend": "Mời một nguời bạn",
+    "discord": "Discord",
+    "instagram": "Instagram",
+    "twitter": "Twitter",
+    "facebook": "Facebook",
+    "copyRight": "Tất cả các quyền được bảo lưu",
+    "privacyPolicy": "Chính sách & Bảo mật",
+    "termsCondition": "Điều khoản & Sử dụng",
+    "facebookfanpage": "Facebook Fanpage",
+    "facebookgroup": "Facebook Group",
+    "tiktok": "Tik Tok",
+    "faq": "FAQ",
+    "topchannels": "Kênh thịnh hành",
+    "E2Ielts": "E2 Ielts",
+    "tedtalk": "Ted Talks",
+    "EnglishLesson4U": "EnglishLesson4U",
+    "BBC6minutesenglish": "BBC 6 minutes english",
+    "TheToeicOfficialChannel": "The Toeic Official Channel",
+    "topcategories": "Mục thịnh hành",
+    "businessandfinance": "Business And Finance",
+    "learning": "Learning Resources",
+    "artsandentertainment": "Arts and Entertainment",
+    "music": "Music",
+    "animation": "Animation",
+    "support": "Support Us",
+    "privacy": "Chính sách riêng tư",
+    "terms": "Điều Khoản",
+    "faqs": "Các câu hỏi thường gặp"
+  },
+  "Pricing": {
+    "upgradeYourPlan": "Nâng cấp gói dịch vụ của bạn",
+    "save": "Tiết kiệm",
+    "validuntil": "Hết hạn",
+    "freeaccess": "Truy cập miễn phí",
+    "currentplan": "Gói dịch vụ hiện tại",
+    "getfreeaccess": "Truy cập miễn phí",
+    "getstarted": "Bắt đầu",
+    "shareToGetPro": "Chia sẻ để nhận 1 ngày sử dụng Pro",
+    "shareToGetProDescription": "Chia sẻ Rabito English lên Facebook để nhận 1 ngày sử dụng Pro miễn phí!",
+    "shareOnFacebook": "Chia sẻ lên Facebook"
+  },
+  "Streak": {
+    "days": "Ngày",
+    "videos": "Video",
+    "lessons": "Bài học",
+    "weekStreak": "tuần liên tiếp",
+    "week": "Tuần",
+    "welcome": "Bạn đang làm rất tốt, Toby!"
+  },
+  "GamePage": {
+    "playGame": "Chơi trò chơi",
+    "inDevelopment": "Đang phát triển"
+  },
+  "Videos": {
+    "defaultTab": "Dành cho bạn",
+    "accent": "Tiếng Anh",
+    "practice": "Luyện tập ngay",
+    "latest": "Mới nhất",
+    "mostViewed": "Xem nhiều nhất",
+    "topFavorites": "Yêu thích nhất",
+    "usersPracticed": "người dùng đã luyện tập"
+  },
+  "Search": {
+    "videos": "Videos",
+    "vocabulary": "Từ Vựng",
+    "channels": "Kênh",
+    "results": "Kết quả",
+    "recentsearches": "Tìm kiếm gần đây",
+    "search": "Tìm kiếm"
+  },
+  "Error": {
+    "PageNotFound": {
+      "title": "Không tìm thấy trang",
+      "message": "Xin lỗi, chúng tôi không thể tìm thấy trang bạn đang tìm kiếm.",
+      "btnText": "Quay lại trang chủ"
+    },
+    "SomethingWentWrong": {
+      "title": "Có lỗi xảy ra",
+      "message": "Chúng tôi theo dõi những lỗi này, nhưng hãy liên hệ với chúng tôi nếu việc làm mới không khắc phục được sự cố.",
+      "btnText": "Thử lại"
+    },
+    "NoInternetConnection": {
+      "title": "Không có kết nối Internet",
+      "message": "Vui lòng kiểm tra kết nối Internet của bạn và thử lại.",
+      "btnText": "Thử lại"
+    }
+  },
+  "Learn": {
+    "nosubtitles": "Không có phụ đề.",
+    "watchandtest": "Xem và kiểm tra hiểu biết của bạn:",
+    "subtitlesOff": "Tắt phụ đề.",
+    "learningTools": "Công cụ học tập",
+    "listenAndChooseTheCorrectAnswer": "Nghe và chọn câu trả lời đúng.",
+    "voice": "Giọng nói",
+    "know": "Biết",
+    "reviewneeded": "Kiểm tra",
+    "total": "Tổng cộng",
+    "congratulations": "Chúc mừng!",
+    "youArelearned": "Bạn đã học",
+    "newVocabularyWordsInThisVideo": "từ vựng mới trong video này!🎉",
+    "keepPracticing": "Chúc mừng bạn đã nâng cao khả năng tiếng Anh! Hãy tiếp tục luyện tập để củng cố những gì bạn đã học.",
+    "quizTime": "Thời gian kiểm tra!",
+    "back": "Quay lại",
+    "goToQuiz": "Đến bài kiểm tra",
+    "goToPractice": "Đến bài Luyện tập",
+    "learn": "Học",
+    "selectedWords": "Từ Đã Chọn",
+    "playbackSpeed": "Tốc độ phát",
+    "volume": "Âm lượng"
+  },
+  "ToastMessage": {
+    "errorRefreshToken": "Phiên làm việc đã hết hạn, vui lòng đăng nhập lại."
+  },
+  "Consultant": {
+    "welcome": {
+      "title": "Welcome, We are",
+      "companyName": "Rabito",
+      "mission": "Our mission is to empower businesses with tailored high-quality outsourcing solutions that drive growth and efficiency.",
+      "getStarted": "Get Started",
+      "learnMore": "Learn More"
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Empowering your digital journey with comprehensive solutions and expert teams",
+      "fullStartupTeam": {
+        "title": "Full Startup Team Deployment",
+        "description": "We provide a dedicated team to rapidly execute your startup idea, from inception to end-user delivery. Our projects range from CRM systems to AI-integrated solutions.",
+        "features": [
+          "End-to-End Project Management",
+          "Custom Team Assembly",
+          "AI and CRM Expertise"
+        ]
+      },
+      "specializedTalent": {
+        "title": "Specialized Talent Augmentation",
+        "description": "If you already have a team and need to hire engineers, UI/UX designers, etc., we provide the specialized talent you need to enhance your project.",
+        "features": [
+          "Flexible Talent Solutions",
+          "Expert Engineers and Designers",
+          "Seamless Integration with Your Team"
+        ]
+      },
+      "technologies": "Technologies We Work With"
+    },
+    "global": {
+      "title": "Our Global Presence and Client Success Stories",
+      "subtitle": "Go along with RabitoEng",
+      "description": "Beyond the worldwide with our fascinating services",
+      "content": "We offer our services in various locations around the world, in addition to Japan. We have more locations in the US and South Africa where your startup can thrive and grow with our support.",
+      "viewAll": "View All Locations"
+    },
+    "insights": {
+      "title": "Insights for Startups",
+      "description": "Discover key insights and solutions that help startups overcome common challenges and accelerate their growth."
+    }
+  },
+  "Consultant": {
+    "welcome": {
+      "title": "Chào mừng, Chúng tôi là",
+      "companyName": "Rabito",
+      "mission": "Sứ mệnh của chúng tôi là trao quyền cho các doanh nghiệp với các giải pháp outsourcing chất lượng cao được thiết kế riêng, thúc đẩy tăng trưởng và hiệu quả.",
+      "getStarted": "Bắt đầu",
+      "learnMore": "Tìm hiểu thêm"
+    },
+    "services": {
+      "title": "Dịch vụ của chúng tôi",
+      "description": "Tăng cường hành trình số hóa của bạn với các giải pháp toàn diện và đội ngũ chuyên gia",
+      "fullStartupTeam": {
+        "title": "Triển khai Đội ngũ Startup Đầy đủ",
+        "description": "Chúng tôi cung cấp một đội ngũ chuyên dụng để nhanh chóng thực hiện ý tưởng startup của bạn, từ khởi đầu đến giao hàng cho người dùng cuối. Các dự án của chúng tôi bao gồm từ hệ thống CRM đến các giải pháp tích hợp AI.",
+        "features": [
+          "Quản lý Dự án Đầu cuối",
+          "Lắp ráp Đội ngũ Tùy chỉnh",
+          "Chuyên môn về AI và CRM"
+        ]
+      },
+      "specializedTalent": {
+        "title": "Tăng cường Nhân tài Chuyên biệt",
+        "description": "Nếu bạn đã có một đội ngũ và cần thuê kỹ sư, nhà thiết kế UI/UX, v.v., chúng tôi cung cấp nhân tài chuyên biệt bạn cần để nâng cao dự án của mình.",
+        "features": [
+          "Giải pháp Nhân tài Linh hoạt",
+          "Kỹ sư và Nhà thiết kế Chuyên gia",
+          "Tích hợp Liền mạch với Đội ngũ của Bạn"
+        ]
+      },
+      "technologies": "Công nghệ chúng tôi làm việc",
+      "learnMore": "Tìm hiểu thêm"
+    },
+    "global": {
+      "title": "Sự hiện diện toàn cầu và câu chuyện thành công của khách hàng",
+      "subtitle": "Đồng hành cùng RabitoEng",
+      "description": "Vượt ra khỏi biên giới với dịch vụ hấp dẫn của chúng tôi",
+      "content": "Chúng tôi cung cấp dịch vụ tại nhiều địa điểm trên thế giới, ngoài Nhật Bản. Chúng tôi có thêm nhiều địa điểm ở Mỹ và Nam Phi, nơi startup của bạn có thể phát triển mạnh mẽ với sự hỗ trợ của chúng tôi.",
+      "viewAll": "Xem tất cả địa điểm",
+      "clientSuccessStories": "Câu chuyện thành công của khách hàng"
+    },
+    "insights": {
+      "title": "Những hiểu biết sâu sắc cho Startup",
+      "description": "Khám phá những hiểu biết và giải pháp quan trọng giúp các startup vượt qua thách thức phổ biến và đẩy nhanh tốc độ tăng trưởng."
+    },
+    "navbar": {
+      "home": "Trang chủ",
+      "services": "Dịch vụ",
+      "global": "Hiện diện toàn cầu",
+      "insights": "Hiểu biết sâu sắc",
+      "contact": "Liên hệ"
+    }
+  }
+}
