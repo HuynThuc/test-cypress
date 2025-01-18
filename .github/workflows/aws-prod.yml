@@ -13,7 +13,7 @@ env:
 jobs:
   pack:
     name: Build, test, and deploy Docker Image
-    runs-on: [self-hosted]
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2  # Checkout mã nguồn
 
