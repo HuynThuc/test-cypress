@@ -32,7 +32,7 @@ jobs:
 
       # Build ứng dụng
       - name: Build Application
-        run: yarn build
+        run: yarn build-and-start
 
       # Kiểm tra ứng dụng (chạy Cypress)
       - name: Run Cypress Tests
