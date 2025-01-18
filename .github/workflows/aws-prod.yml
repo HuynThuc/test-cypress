@@ -13,11 +13,14 @@ env:
 jobs:
   pack:
     name: Build, test, and deploy Docker Image
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
+    env:  # Bổ sung các biến môi trường cho job
+      NEXT_PUBLIC_BASE_URL: http://localhost:3000/api
+      PROXY_BACKEND: https://backend.helenspeaking.com/api/v1
     steps:
       - uses: actions/checkout@v2  # Checkout mã nguồn
 
-      # Thiết lập môi trường Node.js
+      # Thiết lập Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
@@ -27,15 +30,11 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
-      # Build và khởi động ứng dụng
-      - name: Build and Start Application
-        run: |
-          yarn build
-          yarn start &
-          echo "Waiting for app to start..."
-          sleep 30  # Đợi ứng dụng khởi động
+      # Build ứng dụng
+      - name: Build Application
+        run: yarn build
 
-      # Chạy Cypress tests
+      # Kiểm tra ứng dụng (chạy Cypress)
       - name: Run Cypress Tests
         run: yarn cypress:run
 
