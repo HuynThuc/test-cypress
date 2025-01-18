@@ -1,4 +1,5 @@
 name: Deploy
+
 on:
   workflow_dispatch:
   push:
@@ -10,41 +11,39 @@ env:
   AWS_DEFAULT_REGION: ap-southeast-1
 
 jobs:
-  test:
-    name: Run Cypress Tests
-    runs-on: ubuntu-latest  # Thay vì [self-hosted]
+  pack:
+    name: Build, test, and deploy Docker Image
+    runs-on: [self-hosted]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2  # Checkout mã nguồn
 
+      # Thiết lập môi trường Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '18'
-          
+
+      # Cài đặt dependencies
       - name: Install Dependencies
-        run: yarn add next@14.0.3
+        run: yarn install
 
+      # Build và khởi động ứng dụng
       - name: Build and Start Application
-        run: yarn build-and-start &
-        
-      - name: Wait for App to Start
         run: |
+          yarn build
+          yarn start &
           echo "Waiting for app to start..."
-          sleep 30  # Adjust this value based on your app's startup time
+          sleep 30  # Đợi ứng dụng khởi động
 
+      # Chạy Cypress tests
       - name: Run Cypress Tests
-        run: yarn cypress:run  # Note: Using cypress:run instead of cypress:open for CI
+        run: yarn cypress:run
 
-  pack:
-    name: Build and deploy Docker Image
-    needs: test  # This ensures tests pass before deploying
-    runs-on: ubuntu-latest  # Thay vì [self-hosted]
-    steps:
-      - uses: actions/checkout@v2
-
+      # Build Docker image
       - name: Build Docker Image
         run: sudo docker build --no-cache -t ${{ env.DOCKER_IMAGE }} .
 
+      # Kiểm tra container hiện tại
       - name: Check if Container Exists
         run: |
           CONTAINER_ID=$(sudo docker ps -a -q -f name=^${{ env.CONTAINER_NAME }})
@@ -56,6 +55,7 @@ jobs:
             echo "Container ${{ env.CONTAINER_NAME }} does not exist."
           fi
 
+      # Deploy container
       - name: Deploy to AWS
         run: |
           echo "Creating and starting container ${{ env.CONTAINER_NAME }}..."
@@ -63,6 +63,7 @@ jobs:
           sudo docker start ${{ env.CONTAINER_NAME }}
           echo "Container ${{ env.CONTAINER_NAME }} started with image ${{ env.DOCKER_IMAGE }}."
 
+      # Dọn dẹp tài nguyên Docker
       - name: Clean up
         run: |
           echo "Cleaning up dangling images and containers..."
