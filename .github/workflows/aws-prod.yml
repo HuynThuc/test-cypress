@@ -14,7 +14,7 @@ jobs:
   pack:
     name: Build, test, and deploy Docker Image
     runs-on: ubuntu-latest
-    env:  # Bổ sung các biến môi trường cho job
+    env:
       NEXT_PUBLIC_BASE_URL: http://localhost:3000/api
       PROXY_BACKEND: https://backend.helenspeaking.com/api/v1
     steps:
@@ -32,11 +32,19 @@ jobs:
 
       # Build ứng dụng
       - name: Build Application
-        run: yarn build-and-start
+        run: yarn build
+
+      # Chạy server (nếu cần cho Cypress test)
+      - name: Start Server
+        run: yarn start &
+      
+      # Thời gian chờ server khởi động
+      - name: Wait for Server
+        run: sleep 10
 
       # Kiểm tra ứng dụng (chạy Cypress)
       - name: Run Cypress Tests
-        run: yarn cypress:run
+        run: yarn cypress:run --headless --browser electron
 
       # Build Docker image
       - name: Build Docker Image
@@ -45,7 +53,7 @@ jobs:
       # Kiểm tra container hiện tại
       - name: Check if Container Exists
         run: |
-          CONTAINER_ID=$(sudo docker ps -a -q -f name=^${{ env.CONTAINER_NAME }})
+          CONTAINER_ID=$(sudo docker ps -a -q -f name=^${{ env.CONTAINER_NAME }}$)
           if [ "$CONTAINER_ID" ]; then
             echo "Container ${{ env.CONTAINER_NAME }} exists with ID $CONTAINER_ID, removing it..."
             sudo docker rm -f $CONTAINER_ID
