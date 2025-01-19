@@ -27,9 +27,14 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
-      - name: Build and Start Application
-        run: yarn build-and-start &
-     
+      - name: Build Application
+        run: yarn build
+
+      - name: Start Server
+        run: yarn start &
+      
+      - name: Wait for Server
+        run: sleep 10
 
       - name: Run Cypress Tests
         run: yarn cypress:run --headless --browser electron
